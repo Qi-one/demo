@@ -3,6 +3,7 @@ from django.http import HttpResponse
 
 
 def index(request):
+    # 10/0
     """
     index视图
     :param request: 包含了请求信息的请求对象
