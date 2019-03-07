@@ -11,9 +11,9 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-# 工程项目路径
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+
+# 工程项目路径: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 print("工程项目的路径：---",BASE_DIR)
 
@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 #　本地化　　国际化ensu 英语　zh-Hans 中文
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-Hans'
 # 时区
 TIME_ZONE = 'UTC'
 
@@ -120,5 +120,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-# 静态文件
+# 静态文件路由
 STATIC_URL = '/static/'
+STATICFILES_DIRS=[os.path.join(BASE_DIR, 'static_files')]
